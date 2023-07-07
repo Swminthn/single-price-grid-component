@@ -1,0 +1,133 @@
+@font-face {
+    font-family: font1;
+    src: url(./Assets/Karla/Karla-VariableFont_wght.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    display: flex;   
+    justify-content: center;
+    align-items:center ;
+    min-height: 100%;
+}
+body{
+    margin: auto;
+    font-family: font1;
+    background-color: hsl(204, 43%, 93%);;
+    line-height: 2rem;
+    
+}
+
+.container-fluid{
+
+max-width: 750px;
+
+
+
+}
+
+.container1{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+.container2{
+    background-color: hsl(179, 63%, 40%);
+    flex:50%;
+    padding:20px;
+    color:white;
+    border-radius: 0px 0px 0px 10px;
+}
+.container3{
+    background-color: hsl(179, 62%, 43%);
+    flex:50%;
+    padding:20px;
+    color:white;
+    border-radius: 0px 0px 10px 0px;
+    
+}
+.container1, .container2, .container3{
+    min-width: min-content;
+}
+button{
+    background-color: hsl(71, 73%, 54%);
+    padding:15px 60px;
+    margin: 20px;
+    
+    color:white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 80%;
+
+}
+
+ul li {
+    list-style: none;
+
+
+}
+
+
+.big{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.container-flex{
+    display: flex;
+}
+.green-text{
+    color:hsl(71, 73%, 54%);
+}
+.grey-text{
+    color:hsl(218, 22%, 67%);
+}
+h1{
+    color:hsl(179, 62%, 43%);
+}
+
+@media (max-width:756px) {
+html{
+    display: unset;
+}
+body{
+    margin: 10%;
+
+}
+.container-flex{
+    display: unset;
+}
+    
+.container-fluid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0;
+column-gap: 0;
+    grid-template-areas: 
+                            "grid-div-1"
+                            "grid-div-2"
+                            "grid-div-3"
+                            ".";
+
+    
+    
+}
+.grid-div-1{
+    grid-area: grid-div-1;
+}
+.grid-div-2{
+    grid-area: grid-div-2;
+}
+.grid-div-3{
+    grid-area: grid-div-3;
+}
+.container3{
+    border-radius: 0px 0px 10px 10px;
+}
+.container2{
+    border-radius: unset;
+}
+}
